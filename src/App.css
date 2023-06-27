@@ -1,38 +1,182 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-bar {
+  background-color: rgb(15, 11, 11);
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-items a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.main-container {
+  display: flex;
+}
+
+.the-bar {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 230px;
+}
+
+.the-bar h2 {
+  position: relative;
+  right: 10px;
+}
+
+.side-bar {
+  background-color: rgb(48, 47, 47);
+  padding: 10px 10px;
+  height: 200vw;
+}
+
+.side-bar h2 {
+  background-color: white;
+  padding: 8px 10px;
+}
+
+.side-bar-items {
+  position: relative;
+  right: 24%;
+  list-style-type: none;
+} 
+
+.side-bar-items a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  padding-left: 10px;
+}
+
+.side-bar-items a:hover {
+  border-left: 10px solid silver;
+}
+
+.side-bar-items li {
+  padding: 8px 5px;
+  border-bottom: 1px solid white;
+}
+
+main {
+  width: 90%;
+  background-color: rgb(99, 98, 98);
+}
+
+.header-main {
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.header-main img {
+  max-width: 180px;
+}
+
+
+.main-head {
+  display: flex;
+  flex-direction: column;
+}
+
+.champions {
+  background-image: url("https://english.khabarhub.com/wp-content/uploads/2022/12/Argentine_Lionel-Messi-World-Cup.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  padding: 230px;
+}
+
+.game-section h1 {
+  padding: 8px;
+  width: 210px;
+  background-color: rgb(190, 110, 110);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.knockout-comp h2 {
+  padding: 8px; 
+  color: white; 
+  text-align: center;
+  background-color: brown;
+  border-radius: 20px; 
+  width: 180px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+
+.groups-data {
+  text-align: center;
+  width: 250px;
+}
+
+.groups-data th {
+  background-color: brown;
+  padding: 7px 9px;
+  text-transform: uppercase;
+}
+
+.groups-data td {
+  border-bottom: 1px solid rgb(97, 33, 33);  
+  padding: 7px 9px;
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.table-knockout {
+  padding: 8px 10px;
+}
+
+.table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.table td {
+  border-bottom: 1px solid rgb(97, 33, 33); 
+  width: 180px;
+  padding: 10px;
+  background-color: white;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.final td {
+  background-color: gold;
+  color:rgb(15, 11, 11);
+  border-bottom: none;
+}
+
+.more-details {
+  text-align: center;
+  color: rgb(241, 241, 241);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.more-details img {
+  width: 80px;
+}
+ 
