@@ -1,182 +1,196 @@
+* {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 body {
-  margin: 0;
   padding: 0;
+  margin: 0; 
   overflow-x: hidden;
 }
 
-.nav-bar {
-  background-color: rgb(15, 11, 11);
-  padding: 10px;
-}
-
-.nav-items {
+.wrapper {
   display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-}
-
-.nav-items a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.3em;
-}
-
-.main-container {
-  display: flex;
-}
-
-.the-bar {
-  display: flex;
-  flex-direction: column;
-  width: 230px;
-}
-
-.the-bar h2 {
-  position: relative;
-  right: 10px;
+  flex-direction: row; 
 }
 
 .side-bar {
-  background-color: rgb(48, 47, 47);
-  padding: 10px 10px;
-  height: 200vw;
-}
-
-.side-bar h2 {
-  background-color: white;
-  padding: 8px 10px;
-}
-
-.side-bar-items {
-  position: relative;
-  right: 24%;
-  list-style-type: none;
-} 
-
-.side-bar-items a {
-  text-decoration: none;
+  background-color: rgb(19, 16, 16);
   color: white;
-  font-size: 1.2em;
-  padding-left: 10px;
 }
 
-.side-bar-items a:hover {
-  border-left: 10px solid silver;
+.side-bar h3 {
+  background-color: rgb(128, 120, 120);
+  margin-top: auto;
+  padding: 10px 7px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
 }
 
-.side-bar-items li {
-  padding: 8px 5px;
-  border-bottom: 1px solid white;
+.side-bar-container {
+  display: block;
+  position: relative;
+  right: 40px;
 }
 
-main {
-  width: 90%;
-  background-color: rgb(99, 98, 98);
+.side-items {
+  list-style-type: none;
+  margin-left: auto;
 }
 
-.header-main {
-  padding: 10px;
+.side-items li {
+  margin-bottom: 18px;
+  background-color: rgb(14, 12, 12);
+  border-bottom: 8px solid silver;
+  padding: 7px 10px;
+  width: 239px;
+  cursor: pointer;
+}
+
+.side-items li:hover {
+  background-color: rgb(43, 41, 41);
+}
+
+.main-div h1 {
+  width: 300px;
+  padding: 7px;
+  color: white;
+  background-color:darkgoldenrod;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.first-section ul img {
+  width: 160px;
+  height: 250px;
+  cursor: pointer;
+}
+
+.the-list {
+  list-style-type: none;
+  width: 171px;
   text-align: center;
-  background-color: white;
 }
 
-.header-main img {
-  max-width: 180px;
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.5em;
+  width: 100%;
+  color: brown;
 }
 
+.buttons div {
+  cursor: pointer;
+  user-select: none;
+}
 
-.main-head {
+.title-details {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding: 7px 10px;
 }
 
-.champions {
-  background-image: url("https://english.khabarhub.com/wp-content/uploads/2022/12/Argentine_Lionel-Messi-World-Cup.webp");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-  padding: 230px;
-}
-
-.game-section h1 {
+.title-details h3 {
+  background-color: rgb(182, 139, 60);
   padding: 8px;
-  width: 210px;
-  background-color: rgb(190, 110, 110);
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
 }
 
-.knockout-comp h2 {
-  padding: 8px; 
-  color: white; 
-  text-align: center;
-  background-color: brown;
-  border-radius: 20px; 
-  width: 180px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.title-details p {
+  line-height: 30px;
+  background-color:rgb(230, 221, 221);
+  padding: 7px;
 }
 
-.table-container {
-  padding: 10px;
+.suggested {
+  margin-top: 30px;
+  padding: 8px 12px;
+} 
+
+.suggest-header {
+  line-height: 10px;
+  text-align: center;
+  font-size: 1.1em;
+  color: rgb(44, 42, 42);
+}
+
+.hottest-takes {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.groups-data {
+  flex-direction: column;
   text-align: center;
-  width: 250px;
+  align-items: center;
 }
 
-.groups-data th {
-  background-color: brown;
-  padding: 7px 9px;
-  text-transform: uppercase;
+.id-h3 {
+  color: rgb(44, 42, 42);
+  font-size: 2.2em;
+  border-bottom: 3px solid silver;
 }
 
-.groups-data td {
-  border-bottom: 1px solid rgb(97, 33, 33);  
-  padding: 7px 9px;
+.hottest-header {
+  line-height: 10px;
+  margin-bottom: 20px;
+}
+
+.hottest-takes img {
+  width: 350px;
+  height: 420px;
+}
+
+.hottest-takes p {
+  padding: 8px 12px;
+}
+
+.reviews-list {
+  list-style-type: none;
+}
+
+.reviews-list li {
+  background-color: rgb(82, 75, 75);
   color: white;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px 12px;
 }
 
-.table-knockout {
-  padding: 8px 10px;
+@media screen and (min-width: 350px) {
+
+  .side-bar {
+    min-height: 100vh;
+  }
 }
 
-.table {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+/* @media screen and (max-width: 700px) {
 
-.table td {
-  border-bottom: 1px solid rgb(97, 33, 33); 
-  width: 180px;
-  padding: 10px;
-  background-color: white;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-}
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
-.final td {
-  background-color: gold;
-  color:rgb(15, 11, 11);
-  border-bottom: none;
-}
+  .side-bar {
+    min-height: 50%;
+    width: 100%;
+  }
 
-.more-details {
-  text-align: center;
-  color: rgb(241, 241, 241);
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+  .side-bar h3 {
+    display: none;
+  }
 
-.more-details img {
-  width: 80px;
-}
- 
+  .side-bar-container {
+    position: static;
+  }
+
+  .side-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .side-items li {
+    cursor: pointer;
+  }
+} */ 

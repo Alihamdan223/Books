@@ -1,33 +1,29 @@
 const SideBar = () => {
+
+    const newReleases = {
+        theBooks: [
+            "Tom Lake: A Novel",
+            "Everyone Here Is Lying",
+            "The King Of Late Night",
+            "Like A River",
+            "Not That Duke",
+            "I Will Greet The Sun Again",
+            "Crook Manifesto"
+        ]
+    };
+
     return (
-        <div className="nav-parent">
         <nav className="side-bar">
-            <div className="the-bar">
-            <h2>Teams</h2>
-            <ul className="side-bar-items">
-                <li><a href="#">Brazil</a></li>
-                <li><a href="#">Germany</a></li>
-                <li><a href="#"Madrid>France</a></li>
-                <li><a href="#">Italy</a></li>
-                <li><a href="#">England</a></li>
-                <li><a href="#">Spain</a></li>
-                <li><a href="#">Netherlands</a></li>
-                <li><a href="#">Senegal</a></li>
-                <li><a href="#">United States</a></li>
-                <li><a href="#">Argentina</a></li>
-                <li><a href="#">Uruguay</a></li> 
-                <li><a href="#">Mexico</a></li>
-                <li><a href="#">Portugal</a></li>
-                <li><a href="#">Morocco</a></li>
-                <li><a href="#">South Korea</a></li>
-                <li><a href="#">Japan</a></li>
-                <li><a href="#">Australia</a></li>  
-                <li><a href="#">New Zealand</a></li>           
+            <h3>New Releases</h3>
+            <div className="side-bar-container">
+            <ul className="side-items">
+                {newReleases.theBooks.map((books) => {
+                    return <li key={books}>{books}</li>
+                })}
             </ul>
             </div>
         </nav>
-        </div>
     )
 }
 
-export default SideBar; 
+export default SideBar;
